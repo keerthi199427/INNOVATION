@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newBookActivity">
+
+    <TextView
+        android:id="@+id/state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State : "
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="200dp"/>
+
+    <Spinner
+        android:id="@+id/state_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/district_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="District : "
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/state_text"/>
+
+    <Spinner
+        android:id="@+id/district_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/state_spinner" />
+
+    <TextView
+        android:id="@+id/village_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Village : "
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/district_text"/>
+
+    <Spinner
+        android:id="@+id/village_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/district_spinner" />
+
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Grounds"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/village_text"
+        android:background="@drawable/btn_custom"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
